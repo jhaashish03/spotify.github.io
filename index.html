@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="navbar">
+          <div class="navoption" style="opacity: 1">
+            <span class="material-symbols-outlined"> home </span>
+            <a href="#">Home</a>
+          </div>
+          <div class="navoption">
+            <span class="material-symbols-outlined"> search </span>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="library-options">
+            <div class="librarytitle">
+              <img src="./assets/library_icon.png" alt="library" />
+              <a href="#">Your Library</a>
+              <span class="material-symbols-outlined"> add </span>
+            </div>
+
+            <div class="library-boxes">
+              <div class="box">
+                <p class="text-1">Create your first playlist</p>
+                <p class="text-2">It's easy, we will help you.</p>
+                <button>Create a playlist</button>
+              </div>
+              <div class="box">
+                <p class="text-1">Let’s find some podcasts to follow</p>
+                <p class="text-2">We’ll keep you updated on new episodes</p>
+                <button>Create a playlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="navbar-sticky">
+          <div class="nav-icons">
+            <img src="./assets/backward_icon.png" alt="" />
+            <img src="./assets/forward_icon.png" alt="" class="hide" />
+          </div>
+          <div class="nav-buttons">
+            <button class="hide">Explore Premium</button>
+            <button style="font-weight: 500">
+              <span
+                class="material-symbols-outlined"
+                style="background-color: black; color: white"
+              >
+                download
+              </span>
+              <span style="position: relative; top: 4px">Install app</span>
+            </button>
+            <span class="material-symbols-outlined"> person </span>
+          </div>
+        </div>
+
+        <h2>Recently Played</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./assets/card1img.jpeg" alt="" class="card-img" />
+            <p class="card-text-1">Top 50-Global</p>
+            <p class="card-text-2">
+              Your daily update of the most important played...
+            </p>
+          </div>
+        </div>
+        <br />
+
+        <h2>Trending Now Near You</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./assets/card2img.jpeg" alt="" class="card-img" />
+            <p class="card-text-1">Mahiye Jinna Sonna</p>
+            <p class="card-text-2">Spotify</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/card3img.jpeg" alt="" class="card-img" />
+            <p class="card-text-1">MERE PAAS TUM HO</p>
+            <p class="card-text-2">
+              Your daily update of the most important played...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assets/card4img.jpeg" alt="" class="card-img" />
+            <p class="card-text-1">Alter Ego Na Ready</p>
+            <p class="card-text-2">Spotify</p>
+          </div>
+          <div class="card">
+            <img src="./assets/card3img.jpeg" alt="" class="card-img" />
+            <p class="card-text-1">MERE PAAS TUM HO</p>
+            <p class="card-text-2">
+              Your daily update of the most important played...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assets/card4img.jpeg" alt="" class="card-img" />
+            <p class="card-text-1">Alter Ego Na Ready</p>
+            <p class="card-text-2">Spotify</p>
+          </div>
+        </div>
+
+        <br />
+        <h2>Featured Charts</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./assets/card5img.jpeg" alt="" class="card-img" />
+            <p class="card-text-1">Top Songs Global</p>
+            <p class="card-text-2">Spotify</p>
+          </div>
+          <div class="card">
+            <img src="./assets/card6img.jpeg" alt="" class="card-img" />
+            <p class="card-text-1">Top Songs Global</p>
+            <p class="card-text-2">Spotify</p>
+          </div>
+          <div class="card">
+            <img src="./assets/card1img.jpeg" alt="" class="card-img" />
+            <p class="card-text-1">Top 50-Global</p>
+            <p class="card-text-2">Spotify</p>
+          </div>
+        </div>
+
+        <footer>
+          <div class="line-footer"></div>
+        </footer>
+      </div>
+
+      <div class="music-player">
+        <div class="album">
+          <img
+            src="./Homework Assets/album_picture.jpeg"
+            alt=""
+            class="album-picture"
+          />
+          <div class="album-text">
+            <a href="#" class="album-title">Kesariya</a>
+            <a href="#" class="album-desc">Hindi Song</a>
+          </div>
+          <div class="album-icons">
+            <img
+              src="./Homework Assets/album_icon1.png"
+              alt=""
+              class="album-icon"
+            />
+            <img
+              src="./Homework Assets/album_icon2.png"
+              alt=""
+              class="album-icon"
+            />
+          </div>
+        </div>
+        <div class="playback">
+          <button>
+            <img src="./assets/player_icon1.png" alt="" /></button
+          ><button><img src="./assets/player_icon2.png" alt="" /></button
+          ><button id="play-button">
+            <img
+              src="./assets/player_icon3.png"
+              alt=""
+              style="
+                opacity: 1 !important;
+                :hover {
+                  opacity: 1;
+                }
+              "
+            /></button
+          ><button><img src="./assets/player_icon4.png" alt="" /></button
+          ><button><img src="./assets/player_icon5.png" alt="" /></button>
+
+          <div class="progress">
+            <span>0:00</span>
+            <input
+              type="range"
+              name="progress-bar"
+              id="progress-bar"
+              step="1"
+              min="0"
+              max="210"
+              value="0"
+            />
+            <span>3:30</span>
+          </div>
+        </div>
+        <div class="controls">
+          <img
+            src="./Homework Assets/controls_icon1.png"
+            alt=""
+            class="controls-icons"
+          /><img
+            src="./Homework Assets/controld_icon2.png"
+            alt=""
+            class="controls-icons"
+          /><img
+            src="./Homework Assets/controls_icon3.png"
+            alt=""
+            class="controls-icons"
+          /><img
+            src="./Homework Assets/controls_icon4.png"
+            alt=""
+            class="controls-icons"
+          /><img
+            src="./Homework Assets/controls_icon5.png"
+            alt=""
+            class="controls-icons"
+          />
+        </div>
+        <input
+          type="range"
+          name="progress-bar"
+          id="volume-bar"
+          step="1"
+          min="0"
+          max="100"
+          value="100"
+        />
+      </div>
+    </div>
+  </body>
+</html>
